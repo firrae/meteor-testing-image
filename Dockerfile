@@ -8,4 +8,6 @@ RUN apt-get update && \
 
 RUN curl https://install.meteor.com/ | sh
 
+RUN export LC_ALL=C
+
 CMD []
