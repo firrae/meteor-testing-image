@@ -7,3 +7,5 @@ RUN apt-get update && \
    rm -Rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN curl https://install.meteor.com/ | sh
+
+CMD []
