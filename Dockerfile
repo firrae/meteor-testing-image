@@ -8,6 +8,8 @@ RUN apt-get update && \
 
 RUN curl https://install.meteor.com/ | sh
 
-RUN export LC_ALL=C
+RUN echo 'export LANG=C' >> /etc/profile \
+ && echo 'export LC_ALL=C' >> /etc/profile \
+ && echo '' >> /etc/profile
 
-CMD []
+CMD ["/bin/bash"]
