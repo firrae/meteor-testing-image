@@ -1,8 +1,8 @@
 FROM debian:jessie
 MAINTAINER Steve Lambe <@firrae>
 
-ENV LANG=C \
-  LC_ALL=C \
+ENV LANG C
+ENV LC_ALL "C"
 
 RUN apt-get update && \
    apt-get install -y git curl && \
