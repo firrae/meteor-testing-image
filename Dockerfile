@@ -1,6 +1,9 @@
 FROM debian:jessie
 MAINTAINER Steve Lambe <@firrae>
 
+ENV LANG C
+ENV LC_ALL "C"
+
 RUN apt-get update && \
    apt-get install -y git curl && \
    apt-get clean && \
@@ -8,6 +11,4 @@ RUN apt-get update && \
 
 RUN curl https://install.meteor.com/ | sh
 
-RUN export LC_ALL=C
-
-CMD []
+CMD ["/bin/bash"]
