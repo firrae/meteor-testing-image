@@ -1,6 +1,11 @@
 FROM debian:jessie
 MAINTAINER Steve Lambe <@firrae>
 
+RUN apt-get update && \
+   apt-get install -y git curl libfontconfig && \
+   apt-get clean && \
+   rm -Rf /var/lib/apt/lists/* /tmp/* /var/tmp/* 
+
 RUN set -ex \
   && for key in \
     9554F04D7259F04124DE6B476D5A82AC7E37093B \
