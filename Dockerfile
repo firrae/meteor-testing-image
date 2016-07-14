@@ -14,6 +14,7 @@ ENV LC_ALL "C"
 
 RUN curl https://install.meteor.com/ | sh
 
+RUN npm i -g phantomjs-prebuilt
 RUN npm i -g spacejam
 
 CMD ["/bin/bash"]
