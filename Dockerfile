@@ -1,6 +1,9 @@
 FROM debian:jessie
 MAINTAINER Steve Lambe <@firrae>
 
+ENV NODE_ENV dev
+ENV PHANTOMJS_VERSION 2.1.1
+
 RUN apt-get update && \
   apt-get upgrade -y --force-yes && \
   apt-get install -y --force-yes wget curl ca-certificates libfreetype6 libfontconfig bzip2 rsync ssh && \
