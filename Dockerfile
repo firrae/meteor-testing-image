@@ -14,6 +14,6 @@ ENV LC_ALL "C"
 
 RUN curl https://install.meteor.com/ | sh
 
-RUN meteor npm i -g spacejam
+RUN npm i -g spacejam
 
 CMD ["/bin/bash"]
