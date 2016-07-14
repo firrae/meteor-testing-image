@@ -13,11 +13,11 @@ RUN curl -sL https://deb.nodesource.com/setup_4.x | bash - && \
     apt-get install -y nodejs
 
 RUN apt-get install -y libfreetype6
-RUN wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.7-linux-x86_64.tar.bz2
-RUN tar -jxvf phantomjs-1.9.7-linux-x86_64.tar.bz2
-RUN install -t /usr/local/bin phantomjs-1.9.7-linux-x86_64/bin/phantomjs
-RUN rm -rf phantomjs-1.9.7-linux-x86_64
-RUN rm phantomjs-1.9.7-linux-x86_64.tar.bz2
+RUN wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
+RUN tar -jxvf phantomjs-2.1.1-linux-x86_64.tar.bz2
+RUN install -t /usr/local/bin phantomjs-2.1.1-linux-x86_64/bin/phantomjs
+RUN rm -rf phantomjs-2.1.1-linux-x86_64
+RUN rm phantomjs-2.1.1-linux-x86_64.tar.bz2
 
 RUN curl https://install.meteor.com/ | sh
 
