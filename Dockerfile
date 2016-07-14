@@ -6,8 +6,8 @@ RUN apt-get update && \
    apt-get clean && \
    rm -Rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash - && \
-    sudo apt-get install -y nodejs
+RUN curl -sL https://deb.nodesource.com/setup_4.x | bash - && \
+    apt-get install -y nodejs
 
 ENV LANG C
 ENV LC_ALL "C"
