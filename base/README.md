@@ -5,7 +5,6 @@ The main branch will also be updated as I need to add specific packages to get t
 What is in this image:
 - Debian:jessie
 - Meteor (1.3.4.1 as of this build)
-- PhantomJS 2.1.1
 
-Note, to install NPM packages it is recommended to use "meteor npm install". Please preface any Node or NPM commands with "meteor".
-Luckily the Meteor tool is good at updating itself if it sees a different version in your .meteor folder, so nothing should break, but your tests might take a bit longer until I trigger a rebuild.
+Note, to install NPM packages it is recommended to use "meteor npm install" and as such I have not incuded any other version of Node or NPM, this image is big enough as it is. Please preface any Node or NPM commands with "meteor" or you can install Node as a step in your build/testing process.
+Luckily the Meteor tool is good at updating itself if it sees a differednt version in your .meteor folder, so nothing should break, but your tests might take a bit longer.
