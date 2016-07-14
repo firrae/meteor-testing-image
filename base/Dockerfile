@@ -1,4 +1,4 @@
-FROM node:4-wheezy
+FROM debian:jessie
 MAINTAINER Steve Lambe <@firrae>
 
 ENV LANG C
@@ -8,8 +8,6 @@ RUN apt-get update && \
    apt-get install -y git curl libfontconfig && \
    apt-get clean && \
    rm -Rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
-RUN npm i -g spacejam
 
 RUN curl https://install.meteor.com/ | sh
 
