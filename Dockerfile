@@ -2,7 +2,7 @@ FROM debian:jessie
 MAINTAINER Steve Lambe <@firrae>
 
 RUN apt-get update && \
-   apt-get install -y git curl libfontconfig && \
+   apt-get install -y git curl wget libfontconfig && \
    apt-get clean && \
    rm -Rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
